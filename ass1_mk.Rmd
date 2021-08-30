@@ -1,0 +1,14 @@
+---
+title: "can R Notebooks help me with reproducibility?"
+output: html_notebook
+---
+
+Introduction
+
+Short literature review
+
+Discussion
+
+Conclusion
+
+References
