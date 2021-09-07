@@ -1,5 +1,5 @@
 ---
-title: "can R Notebooks help me with reproducibility?"
+title: "Can R Notebooks help me with reproducibility?"
 output:
   html_document:
     df_print: paged
@@ -14,3 +14,5 @@ output:
 # Conclusion
 
 # References
+
+
