@@ -1,14 +1,16 @@
 ---
 title: "can R Notebooks help me with reproducibility?"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 
-Introduction
+# Introduction
 
-Short literature review
+# Short literature review
 
-Discussion
+# Discussion
 
-Conclusion
+# Conclusion
 
-References
+# References
