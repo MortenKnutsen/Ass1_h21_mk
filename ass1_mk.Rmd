@@ -7,14 +7,14 @@ output:
 
 # Introduction
 
-In this paper we will look at reproducibility and how R notebook can be a solution to this problem.
+In this paper we will look at reproducibility and how R notebook can be a solution to this problem. First we are going to look at literature review, where we present what other scientific authors writes about reproducing. Then we will have our on discussion on how the necessity of reproducibility in research and whether the use of "R - Notebooks" is a possible solution to the problem of lack of reproducibility. In the end we will represent a conclusion to the chapter discussion.  
 
 # Short literature review
 
 
 
-We have chosen to use several different scientific articles that are about reproducing. One of the article is from McCullough et al, the article is about *Do economics journal archives promote replicable research?* where they point out that without data+code it will be hard to reproduce the articles or the previous research. 
-
+We have chosen to use several different scientific articles that are about reproducing. One of the article is from McCullough et al, the article is about "*Do economics journal archives promote replicable research?*" (McCullough et al. 2008)
+where they are writing about how the editors and the authors fail to comply with the journal archiving policies. In this articles they are also pointing out how importen it its so also publish their data+code to the article they are publishing. 
 
 # Discussion
 
