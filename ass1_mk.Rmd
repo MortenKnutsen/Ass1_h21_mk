@@ -10,7 +10,10 @@ In this paper we will look at reproducibility and how R notebook can be a soluti
 
 # Short literature review
 
+
+Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011).  This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims.
 # Discussion
+
 
 # Conclusion
 
