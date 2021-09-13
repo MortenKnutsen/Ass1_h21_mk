@@ -7,23 +7,16 @@ output:
 
 # Introduction
 
-In this paper we will look at reproducibility and how R notebook can be a solution to this problem. First we are going to look at literature review, where we present what other scientific authors writes about reproducing. Then we will have our on discussion on how the necessity of reproducibility in research and whether the use of "R - Notebooks" is a possible solution to the problem of lack of reproducibility. In the end we will represent a conclusion to the chapter discussion.  
+In this paper we will look at reproducibility and how R notebook can be a solution to this problem. First we are going to look at literature review, where we present what other scientific authors writes about reproducing. Then we will have our on discussion on how the necessity of reproducibility in research and whether the use of "R - Notebooks" is a possible solution to the problem of lack of reproducibility. In the end we will represent a conclusion to the chapter discussion.
+
+Reproducibility ... When we are talking about reproducibility is about getting confidence in the conclusion to the scientists. (Mcnutt 2014) 
 
 # Short literature review
 
+We have chosen to use several different scientific articles that are about reproducing. One of the article is from McCullough et al, the article is about "*Do economics journal archives promote replicable research?*" (McCullough et al. 2008) where they are writing about how the editors and the authors fail to comply with the journal archiving policies. In this articles they are also pointing out how importen it its so also publish their data+code to the article they publishing.
 
-<<<<<<< HEAD
-
-We have chosen to use several different scientific articles that are about reproducing. One of the article is from McCullough et al, the article is about "*Do economics journal archives promote replicable research?*" (McCullough et al. 2008)
-where they are writing about how the editors and the authors fail to comply with the journal archiving policies. In this articles they are also pointing out how importen it its so also publish their data+code to the article they are publishing. 
-
-=======
-Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011).  This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims.
->>>>>>> morten
-# Discussion
-
+Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011). This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims.
 
 # Conclusion
 
 # References
-
