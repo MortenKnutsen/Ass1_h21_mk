@@ -13,10 +13,8 @@ Reproducibility ... When we are talking about reproducibility is about getting c
 
 # Short literature review
 
-Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011).  This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims. 
 
-<<<<<<< HEAD
-=======
+
 Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011).  This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims. Peng also says that "*Researchers across a range of computational science disciplines have been calling for reproducibility, or reproducible research, as an attainable minimum standard for assessing the value of scientific claims*" (Peng, 2011). Even if reproducibility becomes a minimum standard, it does not guarantee the quality. The "R" kite-mark is to indicate the idea that a knowledgeable has reviewed the data and code and found it reproducible (Peng, 2011). To make researches reproducible it is recommended for everyone that use any computing in there research to publish there code. Even though the code isn´t clean, they should publish it, it just need to be available (Peng 2011). 
 
 
@@ -24,7 +22,7 @@ Roger D. Peng has written a paper that tells us more about reproducibility. He s
 >>>>>>> morten
 # Discussion
 
-We have chosen to use several different scientific articles that are about reproducing. One of the article is from McCullough et al, the article is about "*Do economics journal archives promote replicable research?*" (McCullough et al. 2008) where they are writing about how the editors and the authors fail to comply with the journal archiving policies. In this articles they are also pointing out how importen it its so also publish their data+code to the article they publishing.
+
 
 
 
