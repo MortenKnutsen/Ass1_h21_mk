@@ -11,7 +11,10 @@ In this paper we will look at reproducibility and how R notebook can be a soluti
 # Short literature review
 
 
-Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011).  This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims.
+Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011).  This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims. Peng also says that "*Researchers across a range of computational science disciplines have been calling for reproducibility, or reproducible research, as an attainable minimum standard for assessing the value of scientific claims*" (Peng, 2011). Even if reproducibility becomes a minimum standard, it does not guarantee the quality. The "R" kite-mark is to indicate the idea that a knowledgeable has reviewed the data and code and found it reproducible (Peng, 2011). To make researches reproducible it is recommended for everyone that use any computing in there research to publish there code. Even though the code isn´t clean, they should publish it, it just need to be available (Peng 2011). 
+
+
+
 # Discussion
 
 
