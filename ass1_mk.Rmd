@@ -35,12 +35,15 @@ There is on article about "*Do economics journal archives promote replicable res
 
 1. R Notebook will solve the problem with reproducibility 
   + With R Notebook the document already contain codes. 
-  + It is a free program to use, everybody can install it
+  + It is a free program to use, everybody can install it.
+  + You can use Github to store it longer. 
   
   
 2. R notebook will not solve the problem reproducibility 
-  + If you want the data and code, you have to have the right system/program. 
-  + 
+  + If you want the data and code, you have to have the right packages that was used.  
+  + To use the program you have to know how to use it.
+  +
+  
   
 # Conclusion
 
