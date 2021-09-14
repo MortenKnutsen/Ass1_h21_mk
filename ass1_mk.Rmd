@@ -22,7 +22,7 @@ In this paper we will look at reproducibility and how R notebook can be a soluti
 
 When we are talking about reproducibility is about getting confidence in the conclusion to the scientists @mcnutt2014. The definition of reproducibility is how other researchers can use the analysis of former researchers to achieve the same findings using the same analysis and data @samotadavey2021
  
-R notebook is a document from R Markdown that contains chuncks @Grolemund2021.  
+R Notebook is a document from R Markdown that contains chunks @Grolemund2021. R Notebook is a document that has direct interaction with R, but it is also a document that are reproducible. When you are going to publish the document you can publish Immediately or you can knitted to another document like HTML, PDF or Word.
 
 # Short literature review
 
