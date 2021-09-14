@@ -31,7 +31,14 @@ Roger D. Peng has written a paper that tells us more about reproducibility. He s
 
 There is on article about "*Do economics journal archives promote replicable research?*" written by McCullough et al. @mccullough2008. The article show how the data and the code to an article is important to have to replicate. There is several companies that are publishing articles that want a system that makes the authors to include the data and code when they publish, but most of them fail to achieve that. There are a replication policies that they can follow, that includes some requirements, on how to do it, and then have them in archives. The reason to many of them failed is that i was all up to the authors to do them right. The goal of replication is that authors or researchers can use other-minded articles to explore further, so they can avoid wasting time doing the same research. They also talks how the economics don't see the reason to replicate, but what else is the meaning of archives? 
 
+Code chunks are a series of commands in different programming language, in example R. Code chunks preform calculations needed to produce the appropriate output. Also to create intermediate results used across different code chunks. 
+
+A text chunk, on the other hand, describes the results, codes, problems and the interpretation. Text chunks is formatted for the user to read it, not the computer. 
+
 # Discussion
+
+R notebook can be a solution to fix the problem of reproducibility, but only partly. R notebook has the opportunity to be a good tool for any researcher, but it requires that the researchers knows how to use the program and they need to have the exact same packages that was used under the study, or else they will not manage to reproduce the study
+
 
 1. R Notebook will solve the problem with reproducibility 
   + With R Notebook the document already contain codes. 
