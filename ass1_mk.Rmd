@@ -20,21 +20,23 @@ lang: nb-NO
 
 In this paper we will look at reproducibility and how R notebook can be a solution to this problem. First we are going to look at literature review, where we present what other scientific authors writes about reproducing. Then we will have our on discussion on how the necessity of reproducibility in research and whether the use of "R - Notebooks" is a possible solution to the problem of lack of reproducibility. In the end we will represent a conclusion to the chapter discussion. 
 
-When we are talking about reproducibility is about getting confidence in the conclusion to the scientists. (Mcnutt 2014) @mcnutt2014
+When we are talking about reproducibility is about getting confidence in the conclusion to the scientists @mcnutt2014. The definition of reproducibility is how other researchers can use the analysis of former researchers to achieve the same findings using the same analysis and data @samotadavey2021
  
-R notebook...
+R notebook is a document from R Markdown that contains chuncks @Grolemund2021.  
 
 # Short literature review
 
 Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011). This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims. Peng also says that "*Researchers across a range of computational science disciplines have been calling for reproducibility, or reproducible research, as an attainable minimum standard for assessing the value of scientific claims*" (Peng, 2011). Even if reproducibility becomes a minimum standard, it does not guarantee the quality. The "R" kite-mark is to indicate the idea that a knowledgeable has reviewed the data and code and found it reproducible (Peng, 2011). To make researches reproducible it is recommended for everyone that use any computing in there research to publish there code. Even though the code isn´t clean, they should publish it, it just need to be available (Peng 2011).
 
-There is on article about "*Do economics journal archives promote replicable research?*" written by McCullough et al, @mccullough2008 (McCullough et al. 2008). The article show how the data and the code to an article is important to have to replicate. There is several companies that are publishing articles that want a system that makes the authors to include the data and code when they publish, but most of them fail to achieve that. There are a replication policies that they can follow, that includes some requirements, on how to do it, and then have them in archives. The reason to many of them failed is that i was all up to the authors to do them right. The goal of replication is that authors or researchers can use other-minded articles to explore further, so they can avoid wasting time doing the same research. They also talks how the economics don't see the reason to replicate, but what else is the meaning of archives? 
+There is on article about "*Do economics journal archives promote replicable research?*" written by McCullough et al, @mccullough2008. The article show how the data and the code to an article is important to have to replicate. There is several companies that are publishing articles that want a system that makes the authors to include the data and code when they publish, but most of them fail to achieve that. There are a replication policies that they can follow, that includes some requirements, on how to do it, and then have them in archives. The reason to many of them failed is that i was all up to the authors to do them right. The goal of replication is that authors or researchers can use other-minded articles to explore further, so they can avoid wasting time doing the same research. They also talks how the economics don't see the reason to replicate, but what else is the meaning of archives? 
 
 
 
 # Discussion
 
+
 # Conclusion
+
 
 # References
 
