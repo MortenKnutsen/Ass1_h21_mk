@@ -38,7 +38,7 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-  pdftitle={«R Notebooks» og reproduserbarhet},
+  pdftitle={«R Notebooks» and reproducibility},
   pdfauthor={Assignment 1 i kurset Data Science 2021 - Karoline Midtbø og Morten Knutsen},
   pdflang={nb-NO},
   hidelinks,
@@ -96,7 +96,7 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
-\title{«R Notebooks» og reproduserbarhet}
+\title{«R Notebooks» and reproducibility}
 \author{Assignment 1 i kurset Data Science 2021 - Karoline Midtbø og
 Morten Knutsen}
 \date{}
@@ -112,24 +112,23 @@ a solution to this problem. First we are going to look at literature
 review, where we present what other scientific authors writes about
 reproducing. Then we will have our on discussion on how the necessity of
 reproducibility in research and whether the use of ``R - Notebooks'' is
-a possible solution to the problem of lack of reproducibility. In the
+a possible solution to the problem on lack of reproducibility. In the
 end we will represent a conclusion to the chapter discussion.
 
-When we are talking about \textbf{\emph{reproducibility}} is about
+When we are talking about \textbf{\emph{reproducibility}} it is about
 getting confidence in the conclusion to the scientists
 (\protect\hyperlink{ref-mcnutt2014}{McNutt, 2014}). The definition of
 reproducibility is how other researchers can use the analysis of former
-researchers to achieve the same findings using the same analysis and
-data
-(\protect\hyperlink{ref-samotadavey2021}{\textbf{samotadavey2021?}})
+researchers to achieve the same result using the same analysis and data
+(\protect\hyperlink{ref-samota2021}{Samota og Davey, 2021})
 
 \textbf{\emph{R Notebook}} is a document from R Markdown that contains
-chunks (\protect\hyperlink{ref-grolemund2021}{\textbf{grolemund2021?}}).
-R Notebook is a document that has direct interaction with R, but it is
+chunks(\protect\hyperlink{ref-grolemund}{Grolemund og Wickham, u.å.}). R
+Notebook is a document that has direct interaction with R, but it is
 also a document that are reproducible
-(\protect\hyperlink{ref-Grolemund2021}{\textbf{Grolemund2021?}}). When
+(\protect\hyperlink{ref-grolemund}{Grolemund og Wickham, u.å.}). When
 you are going to publish the document you can publish Immediately or you
-can knitted to another document like HTML, PDF or Word.
+can knitted to another document like HTML,PDF or Word.
 
 \hypertarget{short-literature-review}{%
 \section{Short literature review}\label{short-literature-review}}
@@ -137,37 +136,54 @@ can knitted to another document like HTML, PDF or Word.
 Roger D. Peng has written a paper that tells us more about
 reproducibility. He says that ``\emph{A critical barrier to
 reproducibility in many cases is that the computer code is no longer
-available}'' (Peng, 2011). This is one of the problems to
-reproducibility. There are many researchers that is calling for
-reproducibility to be an attainable minimum standard evaluating the
-value of scientific claims. Peng also says that ``\emph{Researchers
-across a range of computational science disciplines have been calling
-for reproducibility, or reproducible research, as an attainable minimum
-standard for assessing the value of scientific claims}'' (Peng, 2011).
-Even if reproducibility becomes a minimum standard, it does not
-guarantee the quality. The ``R'' kite-mark is to indicate the idea that
-a knowledgeable has reviewed the data and code and found it reproducible
-(Peng, 2011). To make researches reproducible it is recommended for
-everyone that use any computing in there research to publish there code.
-Even though the code isn't clean, they should publish it, it just need
-to be available (Peng 2011). \protect\hyperlink{ref-peng2011}{Peng}
-(\protect\hyperlink{ref-peng2011}{2011})
+available}'' \protect\hyperlink{ref-peng2011}{Peng}
+(\protect\hyperlink{ref-peng2011}{2011}). This is one of the problems to
+reproducibility. ``\emph{Researchers across a range of computational
+science disciplines have been calling for reproducibility, or
+reproducible research, as an attainable minimum standard for assessing
+the value of scientific claims}'' \protect\hyperlink{ref-peng2011}{Peng}
+(\protect\hyperlink{ref-peng2011}{2011}). Even if reproducibility
+becomes a minimum standard, it does not guarantee the quality. The ``R''
+kite-mark is to indicate the idea that a knowledgeable has reviewed the
+data and code and found it reproducible. To make researches reproducible
+it is recommended for everyone that use any computing in there research
+to publish there code. Even though the code isn't clean, they should
+publish it, it just need to be available
+\protect\hyperlink{ref-peng2011}{Peng}
+(\protect\hyperlink{ref-peng2011}{2011}).
 
 There is on article about ``\emph{Do economics journal archives promote
-replicable research?}'' written by McCullough et al.
-\protect\hyperlink{ref-mccullough2008}{McCullough et al.}
-(\protect\hyperlink{ref-mccullough2008}{2008}). The article show how the
-data and the code to an article is important to have to replicate. There
-is several companies that are publishing articles that want a system
-that makes the authors to include the data and code when they publish,
-but most of them fail to achieve that. There are a replication policies
-that they can follow, that includes some requirements, on how to do it,
-and then have them in archives. The reason to many of them failed is
-that i was all up to the authors to do them right. The goal of
-replication is that authors or researchers can use other-minded articles
-to explore further, so they can avoid wasting time doing the same
-research. They also talks how the economics don't see the reason to
-replicate, but what else is the meaning of archives?
+replicable research?}'' written by McCullough et al.@mccullough2008. The
+article show how the data and the code to an article is important to
+have to replicate. There is several companies that are publishing
+articles that want a system that makes the authors include the data and
+code when they publish, but most of them fail to achieve that. There are
+a replication policies that they can follow, that includes some
+requirements, on how to do it, and then have them in archives. The
+reason to many of them failed is that it is all up to the authors to do
+them right. The goal of replication is that authors or researchers can
+use other-minded articles to explore further, so they can avoid wasting
+time doing the same research. They also talks how the economics don't
+see the reason to replicate, but what else is the meaning of archives?
+
+According to McCullough et al.~there are several authors who do not
+include data and codes when they are publishing article etc. Possible
+reasons why they do not publish is that they themselves have to sort to
+see that all data and codes are in order, or else it is not usable to
+reproduce. Sometimes they don't want to let other authors do further
+research to the study they did, or to use it as a base. When it comes to
+publishing with code and data, the authors have to include it by them
+self in the publishing \protect\hyperlink{ref-mccullough2008}{McCullough
+et al.} (\protect\hyperlink{ref-mccullough2008}{2008}).
+
+There is some solution on how to increase the opportunities to reproduce
+others work. Some articles show examples that archives can be mandatory,
+that will mean the authors have to include data and code when they
+publishing so the article etc. will be in a system in the archive and
+can be used again later on. With help of R Markdown/R Notebook it will
+be easier for the authors to have control on the code and data, and it
+will always include in the program. There is to different chunks that
+helps with data and coding.
 
 Code chunks are a series of commands in different programming language,
 in example R. Code chunks preform calculations needed to produce the
@@ -247,18 +263,35 @@ exact test and use a lot of time to get the information. If the author
 publish the code and data it will be easier for the next researcher to
 just use the test that is already done and they will have the exact same
 answer and can use it to develop it. When authors or researchers publish
-with data and code, their will be a lot more of opportunities of
-reproducibility.
+with data and code, there will be a lot more of opportunities of
+reproducibility. But it is all on the authors, when they publish they
+have to check if the code and data are included.
 
 \hypertarget{conclusion}{%
 \section{Conclusion}\label{conclusion}}
 
+After we have read different literature and had an discussion, we can
+see it is a split between the authors that want to publish their data
+and code and they who do not want to publish them. We conclude that the
+R Notebook will help the authors or researchers to have more control on
+the data and the code, but it's a program that need knowledge and
+require different packages to get the exact same answer. Predictability
+will help a lot when it comes to further resource, to don't waste time
+on what others have answer on, it also makes it easier to back up what
+they got.
+
 \hypertarget{references}{%
-\section*{References}\label{references}}
-\addcontentsline{toc}{section}{References}
+\section{References}\label{references}}
+
+\hypertarget{section}{%
+\section*{\texorpdfstring{\protect\includegraphics{images/Skjermbilde 2021-09-15 kl. 10.29.21.png}}{}}\label{section}}
+\addcontentsline{toc}{section}{}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-grolemund}{}%
+Grolemund, G., og Wickham, H. (u.å.). \emph{R for {Data Science}}.
+
 \leavevmode\hypertarget{ref-mccullough2008}{}%
 McCullough, B. D., McGeary, K. A., og Harrison, T. D. (2008). Do
 Economics Journal Archives Promote Replicable Research? \emph{Canadian
@@ -273,6 +306,12 @@ McNutt, M. (2014). Reproducibility. \emph{Science}, \emph{343}(6168),
 Peng, R. D. (2011). Reproducible {Research} in {Computational Science}.
 \emph{Science}, \emph{334}(6060), 1226--1227.
 \url{https://doi.org/10.1126/science.1213847}
+
+\leavevmode\hypertarget{ref-samota2021}{}%
+Samota, E. K., og Davey, R. P. (2021). Knowledge and Attitudes Among
+Life Scientists Toward Reproducibility Within Journal Articles: A
+Research Survey. \emph{Frontiers in Research Metrics and Analytics},
+\emph{6}, 678554. \url{https://doi.org/10.3389/frma.2021.678554}
 
 \end{CSLReferences}
 

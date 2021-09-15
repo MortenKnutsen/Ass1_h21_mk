@@ -1,5 +1,5 @@
 ---
-title: "«R Notebooks» og reproduserbarhet"
+title: "«R Notebooks» and reproducibility"
 author: Assignment 1 i kurset Data Science 2021 - Karoline Midtbø og Morten Knutsen 
 affiliation: HVL
 email: 579729@stud.hvl.no 575413@stud.hvl.no
@@ -7,11 +7,11 @@ bibliography: reproducibility.bib
 csl: apa-no-ampersand.csl
 fontsize: 12pt
 output:
-  word_document: default
   pdf_document:
     keep_tex: yes
   html_document:
     df_print: paged
+  word_document: default
   html_notebook: default  
 link-citations: yes
 lang: nb-NO
@@ -19,21 +19,25 @@ lang: nb-NO
 
 # Introduction
 
-In this paper we will look at reproducibility and how R notebook can be a solution to this problem. First we are going to look at literature review, where we present what other scientific authors writes about reproducing. Then we will have our on discussion on how the necessity of reproducibility in research and whether the use of "R - Notebooks" is a possible solution to the problem of lack of reproducibility. In the end we will represent a conclusion to the chapter discussion.
+In this paper we will look at reproducibility and how R notebook can be a solution to this problem. First we are going to look at literature review, where we present what other scientific authors writes about reproducing. Then we will have our on discussion on how the necessity of reproducibility in research and whether the use of "R - Notebooks" is a possible solution to the problem on lack of reproducibility. In the end we will represent a conclusion to the chapter discussion.
 
-When we are talking about ***reproducibility*** is about getting confidence in the conclusion to the scientists [@mcnutt2014]. The definition of reproducibility is how other researchers can use the analysis of former researchers to achieve the same findings using the same analysis and data [@samotadavey2021]
+When we are talking about ***reproducibility*** it is about getting confidence in the conclusion to the scientists [@mcnutt2014]. The definition of reproducibility is how other researchers can use the analysis of former researchers to achieve the same result using the same analysis and data [@samota2021]
 
-***R Notebook*** is a document from R Markdown that contains chunks [@grolemund2021]. R Notebook is a document that has direct interaction with R, but it is also a document that are reproducible [@Grolemund2021]. When you are going to publish the document you can publish Immediately or you can knitted to another document like HTML, PDF or Word.
+***R Notebook*** is a document from R Markdown that contains
+chunks[@grolemund]. R Notebook is a document that has direct interaction with R, but it is also a document that are reproducible [@grolemund]. When you are going to publish the document you can publish Immediately or you can knitted to another document like HTML,PDF or Word.
 
 # Short literature review
 
-Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" (Peng, 2011). This is one of the problems to reproducibility. There are many researchers that is calling for reproducibility to be an attainable minimum standard evaluating the value of scientific claims. Peng also says that "*Researchers across a range of computational science disciplines have been calling for reproducibility, or reproducible research, as an attainable minimum standard for assessing the value of scientific claims*" (Peng, 2011). Even if reproducibility becomes a minimum standard, it does not guarantee the quality. The "R" kite-mark is to indicate the idea that a knowledgeable has reviewed the data and code and found it reproducible (Peng, 2011). To make researches reproducible it is recommended for everyone that use any computing in there research to publish there code. Even though the code isn't clean, they should publish it, it just need to be available (Peng 2011). @peng2011
+Roger D. Peng has written a paper that tells us more about
+reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" @peng2011. This is one of the problems to reproducibility. "*Researchers across a range of computational science disciplines have been calling for reproducibility, or reproducible research, as an attainable minimum standard for assessing the value of scientific claims*" @peng2011. Even
+if reproducibility becomes a minimum standard, it does not guarantee the quality. The "R" kite-mark is to indicate the idea that a knowledgeable has reviewed the data and code and found it reproducible. To make researches reproducible it is recommended for everyone that use any computing in there research to publish there code. Even though the code isn't clean, they should publish it, it just need to be available @peng2011.
 
-There is on article about "*Do economics journal archives promote replicable research?*" written by McCullough et al. @mccullough2008. The article show how the data and the code to an article is important to have to replicate. There is several companies that are publishing articles that want a system that makes the authors to include the data and code when they publish, but most of them fail to achieve that. There are a replication policies that they can follow, that includes some requirements, on how to do it, and then have them in archives. The reason to many of them failed is that i was all up to the authors to do them right. The goal of replication is that authors or researchers can use other-minded articles to explore further, so they can avoid wasting time doing the same research. They also talks how the economics don't see the reason to replicate, but what else is the meaning of archives?
+There is on article about "*Do economics journal archives promote replicable research?*" written by McCullough et al.@mccullough2008. The article show how the data and the code to an article is important to have to replicate. There is several companies that are publishing articles that want a system that makes the authors include the data and code when they publish, but most of them fail to achieve that. There are a replication policies that they can follow, that includes some requirements, on how to do it, and then have them in archives. The
+reason to many of them failed is that it is all up to the authors to do them right. The goal of replication is that authors or researchers can use other-minded articles to explore further, so they can avoid wasting time doing the same research. They also talks how the economics don't see the reason to replicate, but what else is the meaning of archives?
 
-According to McCullough et al. there are several authors who do not include data and codes when they are publishing article etc. Possible reasons why they do not publish is that they themselves have to sort to see that all data and codes are in order, or else it is not usable to reproduce. Sometimes  they don't want to let other authors do further research to the research they did, or to use it as a base. When it comes to publishing with code and data, the authors have to include them by them self in the publishing @mccullough2008.  
+According to McCullough et al. there are several authors who do not include data and codes when they are publishing article etc. Possible reasons why they do not publish is that they themselves have to sort to see that all data and codes are in order, or else it is not usable to reproduce. Sometimes they don't want to let other authors do further research to the study they did, or to use it as a base. When it comes to publishing with code and data, the authors have to include it by them self in the publishing @mccullough2008.
 
-There is some solution on how to increase the opportunities to reproduce others work. Some articles show examples that archives can be mandatory, that will mean the authors have to include data and code when they publishing so the article etc. will be in a system in the archive and can be used again later on. With help of R Markdown/R Notebook it will be easier for the authors to have control on the code and data, and it will always include in the program. There is to different chunks that helps with data and coding. 
+There is some solution on how to increase the opportunities to reproduce others work. Some articles show examples that archives can be mandatory, that will mean the authors have to include data and code when they publishing so the article etc. will be in a system in the archive and can be used again later on. With help of R Markdown/R Notebook it will be easier for the authors to have control on the code and data, and it will always include in the program. There is to different chunks that helps with data and coding.
 
 Code chunks are a series of commands in different programming language, in example R. Code chunks preform calculations needed to produce the appropriate output. Also to create intermediate results used across different code chunks.
 
@@ -51,18 +55,20 @@ R notebook can be a solution to fix the problem of reproducibility, but only par
 
 2.  R notebook will not solve the problem reproducibility
 
--   If you want the data and code, you have to have the right packages that was used.\
+-   If you want the data and code, you have to have the right packages
+    that was used.\
 -   To use the program you have to know how to use it.
 
 `{r-første chunk} sessionInfo()`
 
 This function can help us to reproduce the research because it gives us information about which R version and packages we used. It can take time to install all the packages if you don't have them, but with chunks it will be easier to find which packages we used in our work.
 
-After the literature work we did, we find a lot of information about how researchers feel about reproducibility. They want to protect the work they did, and often they don't want to publish their code and data they used to find their answers. Without the code and data other researchers can't get the exact same answer, and they will have to take the same exact test and use a lot of time to get the information. If the author publish the code and data it will be easier for the next researcher to just use the test that is already done and they will have the exact same answer and can use it to develop it. When authors or researchers publish with data and code, there will be a lot more of opportunities of reproducibility. But it is all on the authors, when they publish they have to check if the code and data are included. 
-
+After the literature work we did, we find a lot of information about how researchers feel about reproducibility. They want to protect the work they did, and often they don't want to publish their code and data they used to find their answers. Without the code and data other researchers can't get the exact same answer, and they will have to take the same exact test and use a lot of time to get the information. If the author publish the code and data it will be easier for the next researcher to just use the test that is already done and they will have the exact same answer and can use it to develop it. When authors or researchers publish with data and code, there will be a lot more of opportunities of reproducibility. But it is all on the authors, when they publish they have to check if the code and data are included.
 
 # Conclusion
 
-After we have read different literature and had an discussion, we can see it is a split between the authors that want to publish their data and code when they who want to publish them. We conclude that the R Notebook will helps the authors or researchers to have more control on the data and the code, but it's a program that need knowledge and require different packages to get the exact same answer. Predictability will help a lot when it comes to further resource, to don't waste time on what others have answer on, it also makes it easier to back up what they got.  
+After we have read different literature and had an discussion, we can see it is a split between the authors that want to publish their data and code and they who do not want to publish them. We conclude that the R Notebook will help the authors or researchers to have more control on the data and the code, but it's a program that need knowledge and require different packages to get the exact same answer. Predictability will help a lot when it comes to further resource, to don't waste time on what others already have done, it also makes it easier to back up what they got.
 
 # References
+
+# ![](images/Skjermbilde%202021-09-15%20kl.%2010.29.21.png)
