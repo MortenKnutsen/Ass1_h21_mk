@@ -7,11 +7,11 @@ bibliography: reproducibility.bib
 csl: apa-no-ampersand.csl
 fontsize: 12pt
 output:
-  html_document:
-    df_print: paged
+  word_document: default
   pdf_document:
     keep_tex: yes
-  word_document: default
+  html_document:
+    df_print: paged
   html_notebook: default  
 link-citations: yes
 lang: nb-NO
@@ -23,17 +23,13 @@ In this paper we will look at reproducibility and how R notebook can be a soluti
 
 When we are talking about ***reproducibility*** it is about getting confidence in the conclusion to the scientists [@mcnutt2014]. The definition of reproducibility is how other researchers can use the analysis of former researchers to achieve the same result using the same analysis and data [@samota2021]
 
-***R Notebook*** is a document from R Markdown that contains
-chunks[@grolemund]. R Notebook is a document that has direct interaction with R, but it is also a document that are reproducible [@grolemund]. When you are going to publish the document you can publish Immediately or you can knitted to another document like HTML,PDF or Word.
+***R Notebook*** is a document from R Markdown that contains chunks[@grolemund]. R Notebook is a document that has direct interaction with R, but it is also a document that are reproducible [@grolemund]. When you are going to publish the document you can publish Immediately or you can knitted to another document like HTML,PDF or Word.
 
 # Short literature review
 
-Roger D. Peng has written a paper that tells us more about
-reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" @peng2011. This is one of the problems to reproducibility. "*Researchers across a range of computational science disciplines have been calling for reproducibility, or reproducible research, as an attainable minimum standard for assessing the value of scientific claims*" @peng2011. Even
-if reproducibility becomes a minimum standard, it does not guarantee the quality. The "R" kite-mark is to indicate the idea that a knowledgeable has reviewed the data and code and found it reproducible. To make researches reproducible it is recommended for everyone that use any computing in there research to publish there code. Even though the code isn't clean, they should publish it, it just need to be available @peng2011.
+Roger D. Peng has written a paper that tells us more about reproducibility. He says that "*A critical barrier to reproducibility in many cases is that the computer code is no longer available*" @peng2011. This is one of the problems to reproducibility. "*Researchers across a range of computational science disciplines have been calling for reproducibility, or reproducible research, as an attainable minimum standard for assessing the value of scientific claims*" @peng2011. Even if reproducibility becomes a minimum standard, it does not guarantee the quality. The "R" kite-mark is to indicate the idea that a knowledgeable has reviewed the data and code and found it reproducible. To make researches reproducible it is recommended for everyone that use any computing in there research to publish there code. Even though the code isn't clean, they should publish it, it just need to be available @peng2011.
 
-There is on article about "*Do economics journal archives promote replicable research?*" written by McCullough et al.@mccullough2008. The article show how the data and the code to an article is important to have to replicate. There is several companies that are publishing articles that want a system that makes the authors include the data and code when they publish, but most of them fail to achieve that. There are a replication policies that they can follow, that includes some requirements, on how to do it, and then have them in archives. The
-reason to many of them failed is that it is all up to the authors to do them right. The goal of replication is that authors or researchers can use other-minded articles to explore further, so they can avoid wasting time doing the same research. They also talks how the economics don't see the reason to replicate, but what else is the meaning of archives?
+There is on article about "*Do economics journal archives promote replicable research?*" written by McCullough et al.\@mccullough2008. The article show how the data and the code to an article is important to have to replicate. There is several companies that are publishing articles that want a system that makes the authors include the data and code when they publish, but most of them fail to achieve that. There are a replication policies that they can follow, that includes some requirements, on how to do it, and then have them in archives. The reason to many of them failed is that it is all up to the authors to do them right. The goal of replication is that authors or researchers can use other-minded articles to explore further, so they can avoid wasting time doing the same research. They also talks how the economics don't see the reason to replicate, but what else is the meaning of archives?
 
 According to McCullough et al. there are several authors who do not include data and codes when they publish article etc. Possible reasons why they do not publish is that they themselves have to sort out all the data and check that the codes are correct, and it will take a lot of time to do each time. So in many cases the authors do not take the time to include data and code when publishing. Sometimes they will not let other authors do more research on the study they did, or use it as a base, which then means that they do not publish with code and data for the content. @mccullough2008.
 
@@ -45,7 +41,7 @@ A text chunk, on the other hand, describes the results, codes, problems and the 
 
 # Discussion
 
-R Notebook can be a solution to fix the problem of reproducibility, but only partially. The R notebook has the potential to be a great tool for any researcher, but it requires researchers to know how to use the program, and they must have exactly the same packages that were used during the study, otherwise they can not reproduce the study. When you use R studio you can store your project in the repository on Github, where you can save it as a public or private project. After saving it in Github, you can drag it down to R studio whenever you need it. Other Github users can also use your repository / project if you make it public, and will then be able to use your data and code if they have the same packages that you used. There are also many researchers who want to protect their work and do not want to make the codes available, and then it becomes difficult for others to reproduce. For beginners in R it will be a lot to get acquainted with, there are many different things you need to know before you can use it, there are many programs you need to install to do it optimally. We think there can come some problems because when we use the R studio/ R Notebook in the task we always have to save it, commit it and push and pull when we use github as our backup. 
+R Notebook can be a solution to fix the problem of reproducibility, but only partially. The R notebook has the potential to be a great tool for any researcher, but it requires researchers to know how to use the program, and they must have exactly the same packages that were used during the study, otherwise they can not reproduce the study. When you use R studio you can store your project in the repository on Github, where you can save it as a public or private project. After saving it in Github, you can drag it down to R studio whenever you need it. Other Github users can also use your repository / project if you make it public, and will then be able to use your data and code if they have the same packages that you used. There are also many researchers who want to protect their work and do not want to make the codes available, and then it becomes difficult for others to reproduce. For beginners in R it will be a lot to get acquainted with, there are many different things you need to know before you can use it, there are many programs you need to install to do it optimally. We think there can come some problems because when we use the R studio/ R Notebook in the task we always have to save it, commit it and push and pull when we use github as our backup.
 
 Under is some cons and pro on how R Notebook can solve the problem with reproducibility.
 
@@ -57,8 +53,7 @@ Under is some cons and pro on how R Notebook can solve the problem with reproduc
 
 2.  R notebook will not solve the problem reproducibility
 
--   If you want the data and code, you have to have the right packages
-    that was used.
+-   If you want the data and code, you have to have the right packages that was used.
 -   To use the program you have to know how to use it.
 -   You need to download a lot of programs to use the notebook properly.
 
@@ -72,12 +67,15 @@ After the literature work we did, we find a lot of information about how researc
 
 After we have read different literature and had an discussion, we can see it is a split between the authors that want to publish their data and code and they who do not want to publish them. We conclude that the R Notebook will help the authors or researchers to have more control on the data and the code, but it's a program that need knowledge and require different packages to get the exact same answer. Predictability will help a lot when it comes to further resource, to don't waste time on what others already have done, it also makes it easier to back up what they got.
 
-In our conclusion we will say that R Notebook can be a solution to fix the problem of reproducibility, but only partially. We can use different tools to make a good article etc, and it also contains the code and the data. But it is a little bit complicated to understand without knowledge. 
+In our conclusion we will say that R Notebook can be a solution to fix the problem of reproducibility, but only partially. We can use different tools to make a good article etc, and it also contains the code and the data. But it is a little bit complicated to understand without knowledge.
 
 # References
 
-<div id="refs"></div>
+::: {#refs}
+:::
 
 # Appendix
 
 ![](images/Skjermbilde%202021-09-15%20kl.%2010.29.21.png)
+
+![](images/Skjermbilde%202021-09-14%20kl.%2012.31.26.png)
