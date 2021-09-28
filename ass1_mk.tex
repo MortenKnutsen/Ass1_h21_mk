@@ -4,7 +4,6 @@
 %
 \documentclass[
   12pt,
-  norsk,
 ]{article}
 \usepackage{amsmath,amssymb}
 \usepackage{lmodern}
@@ -40,7 +39,6 @@
 \hypersetup{
   pdftitle={«R Notebooks» and reproducibility},
   pdfauthor={Assignment 1 i kurset Data Science 2021 - Karoline Midtbø og Morten Knutsen},
-  pdflang={nb-NO},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
@@ -62,16 +60,6 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\ifxetex
-  % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
-  \usepackage{polyglossia}
-  \setmainlanguage[]{norsk}
-\else
-  \usepackage[main=norsk]{babel}
-% get rid of language-specific shorthands (see #6817):
-\let\LanguageShortHands\languageshorthands
-\def\languageshorthands#1{}
-\fi
 \ifluatex
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -120,13 +108,13 @@ getting confidence in the conclusion to the scientists
 (\protect\hyperlink{ref-mcnutt2014}{McNutt, 2014}). The definition of
 reproducibility is how other researchers can use the analysis of former
 researchers to achieve the same result using the same analysis and data
-(\protect\hyperlink{ref-samota2021}{Samota og Davey, 2021})
+(\protect\hyperlink{ref-samota2021}{Samota and Davey, 2021})
 
 \textbf{\emph{R Notebook}} is a document from R Markdown that contains
-chunks(\protect\hyperlink{ref-grolemund}{Grolemund og Wickham, u.å.}). R
-Notebook is a document that has direct interaction with R, but it is
+chunks(\protect\hyperlink{ref-grolemund}{Grolemund and Wickham, n.d.}).
+R Notebook is a document that has direct interaction with R, but it is
 also a document that are reproducible
-(\protect\hyperlink{ref-grolemund}{Grolemund og Wickham, u.å.}). When
+(\protect\hyperlink{ref-grolemund}{Grolemund and Wickham, n.d.}). When
 you are going to publish the document you can publish Immediately or you
 can knitted to another document like HTML,PDF or Word.
 
@@ -167,23 +155,25 @@ time doing the same research. They also talks how the economics don't
 see the reason to replicate, but what else is the meaning of archives?
 
 According to McCullough et al.~there are several authors who do not
-include data and codes when they are publishing article etc. Possible
-reasons why they do not publish is that they themselves have to sort to
-see that all data and codes are in order, or else it is not usable to
-reproduce. Sometimes they don't want to let other authors do further
-research to the study they did, or to use it as a base. When it comes to
-publishing with code and data, the authors have to include it by them
-self in the publishing \protect\hyperlink{ref-mccullough2008}{McCullough
-et al.} (\protect\hyperlink{ref-mccullough2008}{2008}).
+include data and codes when they publish article etc. Possible reasons
+why they do not publish is that they themselves have to sort out all the
+data and check that the codes are correct, and it will take a lot of
+time to do each time. So in many cases the authors do not take the time
+to include data and code when publishing. Sometimes they will not let
+other authors do more research on the study they did, or use it as a
+base, which then means that they do not publish with code and data for
+the content. \protect\hyperlink{ref-mccullough2008}{McCullough et al.}
+(\protect\hyperlink{ref-mccullough2008}{2008}).
 
-There is some solution on how to increase the opportunities to reproduce
-others work. Some articles show examples that archives can be mandatory,
-that will mean the authors have to include data and code when they
-publishing so the article etc. will be in a system in the archive and
-can be used again later on. With help of R Markdown/R Notebook it will
-be easier for the authors to have control on the code and data, and it
-will always include in the program. There is to different chunks that
-helps with data and coding.
+It is a solution on how to increase the possibilities of reproducing
+other works. Some articles show examples that archives can be mandatory,
+this means that the authors must include data and code when they publish
+so that the article etc. will be in a system in the archive and can be
+used again later. Using the R Markdown / R Notebook will make it easier
+for the authors to have control over the code and data, because it will
+always be included in the program. There are different chunks that allow
+the data and coding to be included in the article without the author
+himself having to set them up and sort them afterwards.
 
 Code chunks are a series of commands in different programming language,
 in example R. Code chunks preform calculations needed to produce the
@@ -197,21 +187,28 @@ it, not the computer.
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
-R notebook can be a solution to fix the problem of reproducibility, but
-only partly. R notebook has the opportunity to be a good tool for any
-researcher, but it requires that the researchers knows how to use the
-program and they need to have the exact same packages that was used
-under the study, or else they will not manage to reproduce the study.
-When you are using R studio you can use Github to store your repository,
-then you can store it as private or public. After you store it in Github
-you can pull it down to R studio whenever you need it. Other Github
-users can also use your repository if you make it public, and use your
-data and code, if they have the same packages you used. There is also a
-lot researchers that want to protect their work and will not make their
-codes available, and then it will be difficult to reproduce for others.
-For beginners in R there will be a lot to get into, there is many
-different things you need to know before you can use it, there is a lot
-of programs you need to install for making it optimal.
+R Notebook can be a solution to fix the problem of reproducibility, but
+only partially. The R notebook has the potential to be a great tool for
+any researcher, but it requires researchers to know how to use the
+program, and they must have exactly the same packages that were used
+during the study, otherwise they can not reproduce the study. When you
+use R studio you can store your project in the repository on Github,
+where you can save it as a public or private project. After saving it in
+Github, you can drag it down to R studio whenever you need it. Other
+Github users can also use your repository / project if you make it
+public, and will then be able to use your data and code if they have the
+same packages that you used. There are also many researchers who want to
+protect their work and do not want to make the codes available, and then
+it becomes difficult for others to reproduce. For beginners in R it will
+be a lot to get acquainted with, there are many different things you
+need to know before you can use it, there are many programs you need to
+install to do it optimally. We think there can come some problems
+because when we use the R studio/ R Notebook in the task we always have
+to save it, commit it and push and pull when we use github as our
+backup.
+
+Under is some cons and pro on how R Notebook can solve the problem with
+reproducibility.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -242,9 +239,11 @@ of programs you need to install for making it optimal.
 \tightlist
 \item
   If you want the data and code, you have to have the right packages
-  that was used.\\
+  that was used.
 \item
   To use the program you have to know how to use it.
+\item
+  You need to download a lot of programs to use the notebook properly.
 \end{itemize}
 
 \texttt{\{r-første\ chunk\}\ sessionInfo()}
@@ -277,25 +276,27 @@ R Notebook will help the authors or researchers to have more control on
 the data and the code, but it's a program that need knowledge and
 require different packages to get the exact same answer. Predictability
 will help a lot when it comes to further resource, to don't waste time
-on what others have answer on, it also makes it easier to back up what
-they got.
+on what others already have done, it also makes it easier to back up
+what they got.
+
+In our conclusion we will say that R Notebook can be a solution to fix
+the problem of reproducibility, but only partially. We can use different
+tools to make a good article etc, and it also contains the code and the
+data. But it is a little bit complicated to understand without
+knowledge.
 
 \hypertarget{references}{%
 \section{References}\label{references}}
 
-\hypertarget{section}{%
-\section*{\texorpdfstring{\protect\includegraphics{images/Skjermbilde 2021-09-15 kl. 10.29.21.png}}{}}\label{section}}
-\addcontentsline{toc}{section}{}
-
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
 \leavevmode\hypertarget{ref-grolemund}{}%
-Grolemund, G., og Wickham, H. (u.å.). \emph{R for {Data Science}}.
+Grolemund, G., and Wickham, H. (n.d.). \emph{R for {Data Science}}.
 
 \leavevmode\hypertarget{ref-mccullough2008}{}%
-McCullough, B. D., McGeary, K. A., og Harrison, T. D. (2008). Do
-Economics Journal Archives Promote Replicable Research? \emph{Canadian
-Journal of Economics/Revue canadienne d'économique}, \emph{41}(4),
+McCullough, B. D., McGeary, K. A., and Harrison, T. D. (2008). Do
+economics journal archives promote replicable research? \emph{Canadian
+Journal of Economics/Revue Canadienne d'économique}, \emph{41}(4),
 1406--1420. \url{https://doi.org/10.1111/j.1540-5982.2008.00509.x}
 
 \leavevmode\hypertarget{ref-mcnutt2014}{}%
@@ -308,11 +309,18 @@ Peng, R. D. (2011). Reproducible {Research} in {Computational Science}.
 \url{https://doi.org/10.1126/science.1213847}
 
 \leavevmode\hypertarget{ref-samota2021}{}%
-Samota, E. K., og Davey, R. P. (2021). Knowledge and Attitudes Among
-Life Scientists Toward Reproducibility Within Journal Articles: A
-Research Survey. \emph{Frontiers in Research Metrics and Analytics},
+Samota, E. K., and Davey, R. P. (2021). Knowledge and attitudes among
+life scientists toward reproducibility within journal articles: A
+research survey. \emph{Frontiers in Research Metrics and Analytics},
 \emph{6}, 678554. \url{https://doi.org/10.3389/frma.2021.678554}
 
 \end{CSLReferences}
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
+
+\includegraphics{images/Skjermbilde 2021-09-15 kl. 10.29.21.png}
+
+\includegraphics{images/Skjermbilde 2021-09-14 kl. 12.31.26.png}
 
 \end{document}

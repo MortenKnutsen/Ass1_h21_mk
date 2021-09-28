@@ -1,0 +1,12 @@
+---
+title: "ag comments"
+output: html_notebook
+---
+
+-   Fjernet lang: nb-NO fra YAML header. Denne besvergelsen trenger vi
+    bare hvis vi skriver på norsk.
+-   Documentet kjører fint igjennom og genererer html, pdf og docx fil.
+    Bra!
+-   Merk bruken av inline og ikke-inline sitering i avsnittet *Short
+    Litrature Review* (dvs med eller uten firkant klammer rundt
+    siteringskommandoen)
