@@ -1,12 +1,20 @@
 ---
 title: "ag comments"
-output: html_notebook
+output:
+  word_document: default
+  pdf_document: default
+  html_document:
+    df_print: paged
 ---
 
--   Fjernet lang: nb-NO fra YAML header. Denne besvergelsen trenger vi
+-   Fjernet lang: nb-NO fra YAML header. Denne «besvergelsen» trenger vi
     bare hvis vi skriver på norsk.
 -   Documentet kjører fint igjennom og genererer html, pdf og docx fil.
     Bra!
 -   Merk bruken av inline og ikke-inline sitering i avsnittet *Short
     Litrature Review* (dvs med eller uten firkant klammer rundt
     siteringskommandoen)
+-   Også foreslått noen endringer i teksten
+-   Skal dere bruke `sessionInfo()` må dere kjører den først på deres
+    maskin og så sette eval=FALSE på code-chunken ellers er det *mitt*
+    system og *mine* pakker som vises av sessionInfo.

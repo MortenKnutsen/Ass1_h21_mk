@@ -7,11 +7,11 @@ bibliography: reproducibility.bib
 csl: apa-no-ampersand.csl
 fontsize: 12pt
 output:
-  pdf_document:
-    keep_tex: yes
+  word_document: default
   html_document:
     df_print: paged
-  word_document: default
+  pdf_document:
+    keep_tex: yes
   html_notebook: default  
 link-citations: yes
 ---
@@ -53,36 +53,34 @@ indicate the idea that a knowledgeable has reviewed the data and code
 and found it reproducible. To make researches reproducible it is
 recommended for everyone that use any computing in there research to
 publish there code. Even though the code isn't clean, they should
-publish it, it just need to be available @peng2011.
+publish it, it just need to be available [@peng2011].
 
-There is on article about "*Do economics journal archives promote
-replicable research?*" written by McCullough et al.\@mccullough2008. The
-article show how the data and the code to an article is important to
-have to replicate. There is several companies that are publishing
-articles that want a system that makes the authors include the data and
-code when they publish, but most of them fail to achieve that. There are
-a replication policies that they can follow, that includes some
-requirements, on how to do it, and then have them in archives. The
-reason to many of them failed is that it is all up to the authors to do
-them right. The goal of replication is that authors or researchers can
-use other-minded articles to explore further, so they can avoid wasting
-time doing the same research. They also talks how the economics don't
-see the reason to replicate, but what else is the meaning of archives?
+\@mccullough2008 argues that the data and the code in an article have to
+replicate. Several publishers og scientific journals now want a system
+that makes the authors include the data and code with their published
+articles, but most of them fail to achieve this. There are replication
+policies that they can follow, that includes some requirements, on how
+to do it, and then have them in archives. The reason so many of them
+fail is that it is all up to the authors to do this right. The goal of
+replication is that authors or researchers can use other-minded articles
+to explore further, so they can avoid wasting time doing the same
+research. They also mention that many economists don't see the reason
+why to replicate, but what else is the meaning of archives?
 
-According to McCullough et al. there are several authors who do not
-include data and codes when they publish article etc. Possible reasons
-why they do not publish is that they themselves have to sort out all the
-data and check that the codes are correct, and it will take a lot of
-time to do each time. So in many cases the authors do not take the time
-to include data and code when publishing. Sometimes they will not let
-other authors do more research on the study they did, or use it as a
-base, which then means that they do not publish with code and data for
-the content. @mccullough2008.
+According to \@mccullough2008 there are several authors who do not
+include data and codes when they publish article e.t.c.. Possible
+reasons why they do not publish is that they themselves have to sort out
+all the data and check that the codes are correct, and it will take a
+lot of time to do it each time. So in many cases the authors do not take
+the time to include data and code when publishing. Sometimes they will
+not let other authors do more research on the study they did, or use it
+as a base, which then means that they do not publish with code and data
+for the content [@mccullough2008].
 
 It is a solution on how to increase the possibilities of reproducing
 other works. Some articles show examples that archives can be mandatory,
 this means that the authors must include data and code when they publish
-so that the article etc. will be in a system in the archive and can be
+so that the article e.t.c. will be in a system in the archive and can be
 used again later. Using the R Markdown / R Notebook will make it easier
 for the authors to have control over the code and data, because it will
 always be included in the program. There are different chunks that allow
@@ -90,7 +88,7 @@ the data and coding to be included in the article without the author
 himself having to set them up and sort them afterwards.
 
 Code chunks are a series of commands in different programming language,
-in example R. Code chunks preform calculations needed to produce the
+for example R. Code chunks preform calculations needed to produce the
 appropriate output. Also to create intermediate results used across
 different code chunks.
 
@@ -104,21 +102,21 @@ R Notebook can be a solution to fix the problem of reproducibility, but
 only partially. The R notebook has the potential to be a great tool for
 any researcher, but it requires researchers to know how to use the
 program, and they must have exactly the same packages that were used
-during the study, otherwise they can not reproduce the study. When you
-use R studio you can store your project in the repository on Github,
-where you can save it as a public or private project. After saving it in
-Github, you can drag it down to R studio whenever you need it. Other
-Github users can also use your repository / project if you make it
-public, and will then be able to use your data and code if they have the
-same packages that you used. There are also many researchers who want to
-protect their work and do not want to make the codes available, and then
-it becomes difficult for others to reproduce. For beginners in R it will
-be a lot to get acquainted with, there are many different things you
-need to know before you can use it, there are many programs you need to
-install to do it optimally. We think there can come some problems
-because when we use the R studio/ R Notebook in the task we always have
-to save it, commit it and push and pull when we use github as our
-backup.
+during the study, otherwise they might not necessarily be able to
+reproduce the study. When you use R studio you can store your project in
+a repository on Github, where you can save it as a public or private
+project. After saving it in Github, you can drag it down to R studio
+whenever you need it. Other Github users can also use your
+repository/project if you make it public, and will then be able to use
+your data and code if they have the same packages that you used. There
+are also many researchers who want to protect their work and do not want
+to make the codes available, and then it becomes difficult for others to
+reproduce. For beginners in R it will be a lot to get acquainted with,
+there are many different things you need to know before you can use it.
+There are also many programs you need to install to do it optimally. We
+think there might be some problems because when we use the R studio/R
+Notebook in this way we always have to save it, commit it and push and
+pull when we use github as our backup.
 
 Under is some cons and pro on how R Notebook can solve the problem with
 reproducibility.
@@ -136,32 +134,34 @@ reproducibility.
 -   To use the program you have to know how to use it.
 -   You need to download a lot of programs to use the notebook properly.
 
-`{r-første chunk} sessionInfo()`
+```{r first-chunk, eval=FALSE}
+sessionInfo()
+```
 
 This function can help us to reproduce the research because it gives us
 information about which R version and packages we used. It can take time
 to install all the packages if you don't have them, but with chunks it
 will be easier to find which packages we used in our work.
 
-After the literature work we did, we find a lot of information about how
-researchers feel about reproducibility. They want to protect the work
-they did, and often they don't want to publish their code and data they
-used to find their answers. Without the code and data other researchers
-can't get the exact same answer, and they will have to take the same
-exact test and use a lot of time to get the information. If the author
-publish the code and data it will be easier for the next researcher to
-just use the test that is already done and they will have the exact same
-answer and can use it to develop it. When authors or researchers publish
-with data and code, there will be a lot more of opportunities of
-reproducibility. But it is all on the authors, when they publish they
-have to check if the code and data are included.
+After the literature work we did, we found a lot of information about
+how researchers feel about reproducibility. They want to protect the
+work they do, and often they don't want to publish the code and data
+they used to find their answers. Without the code and data other
+researchers can't get the exact same answer, and they will have to take
+the same exact test and use a lot of time to get the information. If the
+author publish the code and data it would be easier for the next
+researcher to just use the test that is already done and they will have
+the exact same answer and can use it to develop it. When authors or
+researchers publish with data and code, there will be a lot more of
+opportunities of reproducibility. But it is all on the authors, when
+they publish they have to check if the code and data are included.
 
 # Conclusion
 
 After we have read different literature and had an discussion, we can
 see it is a split between the authors that want to publish their data
-and code and they who do not want to publish them. We conclude that the
-R Notebook will help the authors or researchers to have more control on
+and code and those who do not want to publish. We conclude that the R
+Notebook will help the authors or researchers to have more control on
 the data and the code, but it's a program that need knowledge and
 require different packages to get the exact same answer. Predictability
 will help a lot when it comes to further resource, to don't waste time
@@ -170,8 +170,8 @@ what they got.
 
 In our conclusion we will say that R Notebook can be a solution to fix
 the problem of reproducibility, but only partially. We can use different
-tools to make a good article etc, and it also contains the code and the
-data. But it is a little bit complicated to understand without
+tools to make a good article e.t.c., and it also contains the code and
+the data. But it is a little bit complicated to understand without
 knowledge.
 
 # References
